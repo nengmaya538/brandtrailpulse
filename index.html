@@ -6,536 +6,1554 @@ layout: null
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <meta name="juicyads-site-verification" content="b8200452826fa3c7ca84937d26bdf691">
-    <script>
-    (function() {
-        var hostname = location.hostname;
-        var parts = hostname.split(".");
-        var fullName = parts[0];
-        if (fullName.toLowerCase() === "www") fullName = parts[1] || fullName;
-        var formatText = function(str) {
-            return str.replace(/[-_]/g, " ").replace(/\+/g, " ").replace(/\b\w/g, function(c) { return c.toUpperCase(); });
-        };
-        var displayDomain = formatText(fullName);
-        document.title = displayDomain + " - Beautiful Girls Photo Gallery";
-        var metaDesc = document.querySelector("meta[name=\"description\"]") || document.createElement("meta");
-        metaDesc.name = "description";
-        metaDesc.content = displayDomain + " - Stunning collection of beautiful girls photography from around the world.";
-        if (!metaDesc.parentNode) document.head.appendChild(metaDesc);
-        var metaAuthor = document.querySelector("meta[name=\"author\"]") || document.createElement("meta");
-        metaAuthor.name = "author";
-        metaAuthor.content = displayDomain;
-        if (!metaAuthor.parentNode) document.head.appendChild(metaAuthor);
-        var canonical = document.querySelector("link[rel=\"canonical\"]") || document.createElement("link");
-        canonical.setAttribute("rel", "canonical");
-        canonical.setAttribute("href", location.href);
-        if (!canonical.parentNode) document.head.appendChild(canonical);
-        var schemaData = {"@context":"https://schema.org","@type":"WebSite","name":displayDomain,"description":"Beautiful girls photo gallery from around the world","url":location.origin};
-        var schemaScript = document.createElement("script");
-        schemaScript.type = "application/ld+json";
-        schemaScript.textContent = JSON.stringify(schemaData);
-        document.head.appendChild(schemaScript);
-    })();
-    </script>
-
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandTrailPulse - Video Gallery</title>
+    
+    <link rel="canonical" id="canonicalTag" href="">
+    <meta name="description" id="metaDescription" content="">
+    <script type="application/ld+json" id="breadcrumbSchema"></script>
+    <meta name="juicyads-site-verification" content="f2f1609576a864036118920bb616b7d4">
     <style>
-        /* ===== RESET & BASE ===== */
-        *,*::before,*::after{box-sizing:border-box}
-        html{overflow-x:hidden;background:#050505}
-        body{
-            width:100%;min-width:320px;max-width:100%;margin:0;padding:0;
-            background:#050505;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-            color:#fff;line-height:1.3;-webkit-font-smoothing:antialiased;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        /* ===== HEADER ===== */
-        .site-header{
-            width:100%;position:fixed;top:0;left:0;z-index:1000;
-            background:rgba(5,5,5,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-            border-bottom:1px solid rgba(255,255,255,.08);
-            padding:12px 12px;
-        }
-        .header-inner{
-            display:flex;align-items:center;gap:10px;max-width:1280px;margin:0 auto;
-        }
-        .site-avatar{flex-shrink:0;line-height:0}
-        .site-avatar svg{width:34px;height:34px}
-        .site-title{
-            flex:1;font-size:16px;font-weight:700;letter-spacing:.3px;
-            white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#fff;
-        }
-        .menu-btn{
-            width:42px;height:42px;flex-shrink:0;
-            background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
-            cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;
-            border-radius:50%;transition:all .2s ease;
-        }
-        .menu-btn:active{background:rgba(255,255,255,.12);transform:scale(.95)}
-        .menu-btn svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
-
-        .slide-menu{
-            display:none;position:fixed;top:58px;right:8px;z-index:999;
-            background:#1a1a1a;border:1px solid #333;border-radius:14px;padding:6px;
-            min-width:200px;box-shadow:0 8px 32px rgba(0,0,0,.6);
-        }
-        .slide-menu.open{display:block}
-        .slide-menu ul{list-style:none;margin:0;padding:0}
-        .slide-menu li+li{border-top:1px solid rgba(255,255,255,.04)}
-        .slide-menu a{
-            display:block;padding:13px 16px;color:#ccc;text-decoration:none;
-            font-size:15px;font-weight:500;border-radius:10px;transition:all .15s ease;
-        }
-        .slide-menu a:active{background:#2a2a2a;color:#fff}
-
-        /* ===== DESKTOP NAV (hidden di mobile) ===== */
-        .desktop-nav{display:none}
-
-        /* ===== AD CONTAINER ===== */
-        .ad-box{
-            display:flex;justify-content:center;align-items:center;
-            margin:0 auto;max-width:100%;overflow:hidden;
-            background:#080808;min-height:50px;
-        }
-        .ad-box ins{max-width:100%}
         
-        /* Responsive ad visibility */
-        .ad-desktop{display:none}
-        .ad-mobile{display:flex}
-        .ad-both{display:flex}
-
-        /* ===== AD BREAK (top & bottom) ===== */
-        .ad-break{
-            padding:12px 0;background:#080808;
-            border-top:1px solid rgba(255,255,255,.04);
-            border-bottom:1px solid rgba(255,255,255,.04);
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            min-height: 100vh;
+            color: #ffffff;
         }
-        .ad-break:first-child{margin-top:58px}
-
-        /* ===== AD INLINE (antar section) ===== */
-        .ad-inline{
-            margin:24px 0;padding:12px 0;
-            background:#080808;
-            border-top:1px solid rgba(255,255,255,.03);
-            border-bottom:1px solid rgba(255,255,255,.03);
+        
+        .app {
+            display: flex;
+            min-height: 100vh;
+            max-width: 1440px;
+            margin: 0 auto;
         }
-
-        /* ===== MAIN LAYOUT ===== */
-        .main-layout{
-            display:flex;flex-direction:column;gap:0;width:100%;max-width:1280px;
-            margin:0 auto;padding:0;
+        
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            width: 240px;
+            background: #111118;
+            padding: 20px 14px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            flex-shrink: 0;
+            border-right: 1px solid rgba(255,255,255,0.04);
+            display: flex;
+            flex-direction: column;
         }
-        .content-area{flex:1;min-width:0;padding:0;width:100%}
-
-        .sidebar{display:none}
-        .sticky-ad{position:sticky;top:80px;display:flex;justify-content:center}
-
-        /* ============================
-           GV2 GALLERY SYSTEM
-           ============================ */
-        .gv2-section{margin:20px 0}
-        .gv2-section:first-child{margin-top:4px}
-        .gv2-title{padding:0 8px;margin:0 auto 10px;max-width:1400px}
-        .gv2-title h2{
-            margin:0;font-size:19px;font-weight:800;color:#fff;letter-spacing:.2px;
+        
+        .sidebar::-webkit-scrollbar { width: 3px; }
+        .sidebar::-webkit-scrollbar-thumb { background: #e94560; border-radius: 4px; }
+        
+        .sidebar-brand {
+            text-align: center;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            margin-bottom: 16px;
+            flex-shrink: 0;
         }
-        .gv2-featured-title h2{font-size:21px;color:#ff6b6b}
-        .gv2-grid{max-width:1400px;margin:auto;padding:0;gap:0}
-
-        /* === MOBILE: 1 KOLOM FULLWIDTH === */
-        .gv2-featured{display:grid;grid-template-columns:1fr;gap:4px}
-        .gv2-latest{display:grid;grid-template-columns:1fr;gap:4px}
-        .gv2-stories{display:grid;grid-template-columns:1fr;gap:4px}
-        .gv2-tutorials{display:grid;grid-template-columns:1fr;gap:4px}
-        .gv2-archive{display:grid;grid-template-columns:1fr;gap:4px}
-
-        .gv2-featured-big,
-        .gv2-featured-small{
-            grid-column:auto;grid-row:auto;
+        
+        .sidebar-brand .logo-icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 6px;
         }
-
-        /* Card */
-        .gv2-card{
-            position:relative;overflow:hidden;border-radius:0;background:#0a0a0a;
-            -webkit-tap-highlight-color:transparent;
+        .sidebar-brand .logo-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: #e94560;
         }
-        .gv2-card-link{
-            display:block;width:100%;
+        .sidebar-brand h1 {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
-        .gv2-card-link img{
-            width:100%;height:100%;object-fit:cover;display:block;
-            transition:transform .3s ease;aspect-ratio:16/9;
+        .sidebar-brand h1 span {
+            color: #e94560;
         }
-        .gv2-card-link:active img{transform:scale(1.02)}
-
-        /* Card body (di luar link) */
-        .gv2-card-body{
-            padding:10px 10px 12px;
-            background:linear-gradient(to top, rgba(0,0,0,.95) 0%, rgba(10,10,10,1) 100%);
-            z-index:2;
+        .sidebar-brand p {
+            color: rgba(255,255,255,0.12);
+            font-size: 7px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 2px;
         }
-        .gv2-card-title-link{
-            color:#fff;text-decoration:none;display:block;
-            margin:0 0 3px;font-size:13px;font-weight:700;line-height:1.25;
-            display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
-            overflow:hidden;
+        
+        .sidebar-section-title {
+            color: rgba(255,255,255,0.08);
+            font-size: 7px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            flex-shrink: 0;
         }
-        .gv2-card-title-link:active{color:#ff6b6b}
-        .gv2-card-desc{
-            margin:0;font-size:10px;color:rgba(255,255,255,.65);
-            line-height:1.35;
-            overflow:hidden;
+        
+        .sidebar-tags-wrapper {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 4px;
+            max-height: 100%;
         }
-        /* Biarkan konten deskripsi apa adanya */
-        .gv2-card-desc img,
-        .gv2-card-desc svg,
-        .gv2-card-desc iframe,
-        .gv2-card-desc script,
-        .gv2-card-desc style{display:none!important}
-        .gv2-card-desc *{
-            font-size:inherit!important;color:inherit!important;
-            margin:0!important;padding:0!important;
-            background:none!important;border:none!important;
+        .sidebar-tags-wrapper::-webkit-scrollbar { width: 2px; }
+        .sidebar-tags-wrapper::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.05); border-radius: 4px; }
+        
+        .sidebar-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px;
         }
-
-        .excerpt{display:none}
-
-        /* ============================
-           TABLET (min-width:600px)
-           ============================ */
-        @media(min-width:600px){
-            .ad-desktop{display:flex}
-            .ad-mobile{display:none}
-            .ad-both{display:flex}
-
-            .site-header{padding:12px 16px}
-            .site-title{font-size:17px}
-            .ad-break{padding:16px 0}
-            .ad-break:first-child{margin-top:60px}
-            .ad-inline{margin:28px 0;padding:14px 0}
-            .gv2-title{padding:0 12px}
-            .gv2-title h2{font-size:22px}
-            .gv2-grid{padding:0 8px;gap:6px}
-
-            .gv2-featured{grid-template-columns:1fr 1fr;gap:6px}
-            .gv2-featured-big{grid-column:1 / -1}
-            .gv2-latest{grid-template-columns:1fr 1fr;gap:6px}
-            .gv2-stories{grid-template-columns:1fr 1fr;gap:6px}
-            .gv2-tutorials{grid-template-columns:1fr 1fr;gap:6px}
-            .gv2-archive{grid-template-columns:1fr 1fr;gap:6px}
-
-            .gv2-card{border-radius:6px}
-            .gv2-card-link img{aspect-ratio:9/16}
-            .gv2-card-body{padding:12px 12px 14px}
-            .gv2-card-title-link{font-size:14px}
-            .gv2-card-desc{font-size:11px}
+        .sidebar-tag {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba(255,255,255,0.2);
+            font-size: 8px;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.03);
+            background: rgba(255,255,255,0.02);
+            transition: color 0.2s, border-color 0.2s;
+            cursor: pointer;
+            line-height: 1.4;
         }
-
-        /* ============================
-           DESKTOP (min-width:900px)
-           ============================ */
-        @media(min-width:900px){
-            body{max-width:1280px;margin:0 auto}
-
-            .site-header{
-                left:50%;transform:translateX(-50%);max-width:1280px;
-                padding:12px 20px;
+        .sidebar-tag:hover {
+            border-color: #e94560;
+            color: #e94560;
+        }
+        .sidebar-tag.active-tag {
+            border-color: #e94560;
+            color: #e94560;
+            background: rgba(233, 69, 96, 0.08);
+        }
+        
+        /* ===== MAIN CONTENT ===== */
+        .main-content {
+            flex: 1;
+            padding: 20px 20px 32px;
+            background: #0a0a0f;
+            overflow-x: hidden;
+        }
+        
+        /* ===== BREADCRUMB ===== */
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2px 4px;
+            padding: 0 0 12px;
+            margin-bottom: 16px;
+            border-bottom: none;
+            font-size: 9px;
+        }
+        
+        .breadcrumb-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+        }
+        
+        .breadcrumb-link {
+            text-decoration: none;
+            color: rgba(255,255,255,0.12);
+            transition: color 0.2s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            font-weight: 400;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.02);
+            font-size: 8px;
+        }
+        .breadcrumb-link svg {
+            width: 10px;
+            height: 10px;
+            fill: currentColor;
+        }
+        .breadcrumb-link:hover {
+            color: #e94560;
+            background: rgba(233, 69, 96, 0.06);
+        }
+        
+        .breadcrumb-separator {
+            color: rgba(255,255,255,0.04);
+            font-size: 6px;
+            padding: 0 2px;
+        }
+        
+        .breadcrumb-current {
+            color: #ffffff;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: rgba(233, 69, 96, 0.1);
+            border: 1px solid rgba(233, 69, 96, 0.08);
+            font-size: 8px;
+        }
+        
+        .breadcrumb-tag {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba(255,255,255,0.15);
+            font-size: 7.5px;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.03);
+            background: rgba(255,255,255,0.02);
+            transition: color 0.2s, border-color 0.2s;
+            cursor: pointer;
+            line-height: 1.3;
+        }
+        .breadcrumb-tag:hover {
+            border-color: #e94560;
+            color: #e94560;
+        }
+        .breadcrumb-tag.active-tag {
+            border-color: #e94560;
+            color: #e94560;
+            background: rgba(233, 69, 96, 0.06);
+        }
+        
+        /* ===== BANNER IKLAN ===== */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            padding: 6px 0;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.01);
+            border: 1px solid rgba(255,255,255,0.02);
+            align-items: center;
+        }
+        
+        .ad-container .ad-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ad-container .ad-content iframe,
+        .ad-container .ad-content img,
+        .ad-container .ad-content ins {
+            max-width: 100%;
+            border: none;
+        }
+        
+        /* Desktop Banner (default) */
+        .ad-desktop {
+            display: flex;
+        }
+        
+        /* Mobile Banner (hidden by default) */
+        .ad-mobile {
+            display: none;
+        }
+        
+        .ad-top {
+            margin-bottom: 18px;
+        }
+        .ad-middle {
+            margin: 18px 0;
+        }
+        .ad-bottom {
+            margin-top: 18px;
+        }
+        
+        /* ===== GRID ===== */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        /* ===== CARD ===== */
+        .grid-item {
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #14141e;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid rgba(255,255,255,0.03);
+            -webkit-tap-highlight-color: transparent;
+            scroll-margin-top: 20px;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            border-color: rgba(233, 69, 96, 0.08);
+        }
+        
+        .grid-item:active {
+            transform: scale(0.97);
+        }
+        
+        .grid-item .thumbnail {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+            background: #0a0a0f;
+        }
+        
+        .grid-item .thumbnail .gradient-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom,
+                rgba(0,0,0,0.1) 0%,
+                rgba(0,0,0,0.3) 40%,
+                rgba(0,0,0,0.6) 70%,
+                rgba(0,0,0,0.85) 100%
+            );
+            z-index: 1;
+        }
+        
+        .grid-item .thumbnail .play-btn {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgba(233, 69, 96, 0.85);
+            border: 1.5px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+        
+        .grid-item:hover .thumbnail .play-btn {
+            background: #e94560;
+            transform: scale(1.06);
+        }
+        
+        .grid-item .thumbnail .play-btn svg {
+            width: 15px;
+            height: 15px;
+            margin-left: 2px;
+            fill: #ffffff;
+        }
+        
+        .grid-item .thumbnail .duration-badge {
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+            font-size: 7px;
+            font-weight: 600;
+            color: #ffffff;
+            background: rgba(0,0,0,0.7);
+            padding: 1px 8px;
+            border-radius: 3px;
+            z-index: 2;
+            letter-spacing: 0.2px;
+        }
+        
+        .grid-item .thumbnail .exclusive-badge {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            font-size: 5.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #e94560;
+            background: rgba(0,0,0,0.7);
+            padding: 1px 8px;
+            border-radius: 12px;
+            z-index: 2;
+        }
+        
+        .grid-item .thumbnail .views-badge {
+            position: absolute;
+            bottom: 6px;
+            left: 6px;
+            font-size: 6px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.3);
+            background: rgba(0,0,0,0.5);
+            padding: 1px 6px;
+            border-radius: 12px;
+            z-index: 2;
+        }
+        
+        .grid-item .card-body {
+            padding: 8px 10px 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            background: #14141e;
+        }
+        
+        .grid-item .card-body .title {
+            font-size: 9.5px;
+            font-weight: 600;
+            color: #ffffff;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            transition: color 0.2s;
+        }
+        
+        .grid-item:hover .card-body .title {
+            color: #e94560;
+        }
+        
+        .grid-item .card-body .meta-row {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 2px;
+            padding-top: 5px;
+            border-top: 1px solid rgba(255,255,255,0.03);
+        }
+        
+        .grid-item .card-body .meta-row .video-number {
+            font-size: 6px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.06);
+        }
+        
+        .grid-item.highlight {
+            animation: highlightPulse 1.5s ease;
+        }
+        
+        @keyframes highlightPulse {
+            0%, 100% { border-color: rgba(255,255,255,0.03); }
+            50% { border-color: #e94560; box-shadow: 0 0 20px rgba(233,69,96,0.1); }
+        }
+        
+        /* ===== MOBILE TAGS ===== */
+        .mobile-tags-section {
+            display: none;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255,255,255,0.03);
+        }
+        
+        .mobile-tags-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .mobile-tags-title {
+            font-size: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255,255,255,0.15);
+        }
+        
+        .mobile-tags-toggle {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.03);
+            color: rgba(255,255,255,0.15);
+            font-size: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 2px 10px;
+            border-radius: 12px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .mobile-tags-toggle:hover {
+            border-color: #e94560;
+            color: #e94560;
+        }
+        
+        .mobile-tags-wrapper {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease;
+        }
+        .mobile-tags-wrapper.open {
+            max-height: 2000px;
+        }
+        
+        .mobile-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding-top: 10px;
+        }
+        
+        .mobile-tag {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba(255,255,255,0.15);
+            font-size: 8px;
+            font-weight: 500;
+            padding: 2px 10px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.03);
+            background: rgba(255,255,255,0.02);
+            transition: color 0.2s, border-color 0.2s;
+            cursor: pointer;
+        }
+        .mobile-tag:hover {
+            border-color: #e94560;
+            color: #e94560;
+        }
+        .mobile-tag.active-tag {
+            border-color: #e94560;
+            color: #e94560;
+            background: rgba(233, 69, 96, 0.06);
+        }
+        
+        /* ===== PAGINATION ===== */
+        .main-pagination {
+            display: flex;
+            justify-content: center;
+            gap: 3px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+        .main-pagination button {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.03);
+            color: rgba(255,255,255,0.15);
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 9px;
+            font-weight: 500;
+            transition: color 0.2s, border-color 0.2s;
+            min-width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-pagination button:hover {
+            border-color: #e94560;
+            color: #e94560;
+        }
+        .main-pagination button.active {
+            background: #e94560;
+            border-color: #e94560;
+            color: #ffffff;
+        }
+        .main-pagination button:disabled {
+            opacity: 0.1;
+            cursor: not-allowed;
+        }
+        .main-pagination button svg {
+            width: 9px;
+            height: 9px;
+            fill: currentColor;
+        }
+        
+        .main-indicator {
+            text-align: center;
+            color: rgba(255,255,255,0.05);
+            font-size: 8px;
+            letter-spacing: 0.3px;
+            margin: 8px 0 0;
+        }
+        .main-indicator strong {
+            color: #e94560;
+            font-weight: 600;
+        }
+        
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .video-grid {
+                gap: 10px;
             }
-            .site-title{font-size:15px;font-weight:600;color:#ccc}
-            .menu-btn{display:none}
-            .slide-menu{display:none!important}
-
-            .ad-break:first-child{margin-top:62px}
-
-            .main-layout{flex-direction:row;padding:0 8px}
-            .sidebar{display:block;flex-shrink:0;padding:16px 8px;position:relative}
-            .sidebar-left{width:160px;border-right:1px solid rgba(255,255,255,.03)}
-            .sidebar-right{width:160px;border-left:1px solid rgba(255,255,255,.03)}
-
-            .gv2-section{margin:32px 0}
-            .gv2-section:first-child{margin-top:8px}
-            .gv2-title{padding:0 14px}
-            .gv2-title h2{font-size:22px}
-            .gv2-grid{padding:0 14px;gap:10px}
-
-            .gv2-featured{
-                grid-template-columns:2fr 1fr 1fr;
-                grid-template-rows:1fr 1fr;gap:10px;
-            }
-            .gv2-featured-big{
-                grid-column:1 / 2;grid-row:1 / 3;
-            }
-            .gv2-featured-big .gv2-card-link img{aspect-ratio:auto;height:100%}
-            .gv2-featured-small{grid-column:auto;grid-row:auto}
-            .gv2-featured-small .gv2-card-link img{aspect-ratio:9/16}
-
-            .gv2-latest{grid-template-columns:repeat(5,1fr);gap:10px}
-            .gv2-stories{grid-template-columns:repeat(4,1fr);gap:10px}
-            .gv2-tutorials{grid-template-columns:repeat(3,1fr);gap:10px}
-            .gv2-archive{grid-template-columns:repeat(6,1fr);gap:10px}
-
-            .gv2-card{border-radius:12px}
-            .gv2-card:hover .gv2-card-link img{transform:scale(1.05)}
-            .gv2-card-title-link:hover{color:#ff6b6b;text-decoration:underline}
-
-            /* Desktop nav: muncul */
-            .desktop-nav{
-                display:flex;gap:4px;padding:0 14px;max-width:1400px;margin:0 auto 8px;
-            }
-            .desktop-nav a{
-                padding:6px 12px;color:#999;text-decoration:none;font-size:13px;
-                border-radius:6px;transition:all .15s ease;
-            }
-            .desktop-nav a:hover{color:#fff;background:rgba(255,255,255,.04)}
         }
-
-        /* ============================
-           LARGE DESKTOP (min-width:1100px)
-           ============================ */
-        @media(min-width:1100px){
-            .sidebar-left{width:180px}
-            .sidebar-right{width:180px}
-            .gv2-grid{gap:12px}
-            .gv2-featured{gap:12px}
-            .gv2-latest{gap:12px}
-            .gv2-stories{gap:12px}
-            .gv2-tutorials{gap:12px}
-            .gv2-archive{gap:12px}
+        
+        @media (max-width: 768px) {
+            .app {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 200px;
+                position: relative;
+                padding: 12px;
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.03);
+            }
+            
+            .sidebar-brand h1 { font-size: 13px; }
+            .sidebar-tags-wrapper {
+                max-height: 80px;
+            }
+            
+            .main-content {
+                padding: 12px;
+            }
+            
+            .video-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6px;
+            }
+            
+            .grid-item .card-body .title { font-size: 8px; }
+            .grid-item .card-body .meta-row .video-number { font-size: 5px; }
+            .grid-item .thumbnail .play-btn { width: 28px; height: 28px; }
+            .grid-item .thumbnail .play-btn svg { width: 10px; height: 10px; }
+            .grid-item .thumbnail .duration-badge { font-size: 5.5px; padding: 1px 6px; }
+            .grid-item .thumbnail .exclusive-badge { font-size: 4.5px; padding: 1px 5px; top: 4px; left: 4px; }
+            .grid-item .thumbnail .views-badge { font-size: 4.5px; padding: 1px 4px; bottom: 4px; left: 4px; }
+            .grid-item .card-body { padding: 5px 6px 6px; }
+            
+            .mobile-tags-section { display: block; }
+            .sidebar .sidebar-tags-wrapper { display: none; }
+            .sidebar .sidebar-section-title { display: none; }
+            
+            /* ===== SWITCH BANNER: Desktop -> Mobile ===== */
+            .ad-desktop {
+                display: none !important;
+            }
+            .ad-mobile {
+                display: flex !important;
+            }
+            
+            .ad-container {
+                padding: 4px 0;
+            }
+            .ad-top { margin-bottom: 12px; }
+            .ad-middle { margin: 12px 0; }
+            .ad-bottom { margin-top: 12px; }
+        }
+        
+        @media (max-width: 480px) {
+            .video-grid {
+                gap: 4px;
+            }
+            .grid-item .card-body .title { font-size: 7px; }
+            .grid-item .thumbnail .play-btn { width: 22px; height: 22px; }
+            .grid-item .thumbnail .play-btn svg { width: 8px; height: 8px; }
         }
     </style>
-    
-{% include head.html %}
-{% include verif.html %}
-
+    {% include head.html %}
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="header-inner">
-            <div id="domainAvatar" class="site-avatar"></div>
-            <span id="blogMainTitle" class="site-title"></span>
-            <button class="menu-btn" id="blogMenuToggle" aria-label="Menu">
-                <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-                <svg viewBox="0 0 24 24" style="display:none"><path d="M6 6l12 12M6 18l12-12"/></svg>
-            </button>
-        </div>
-    </header>
-
-    <!-- SLIDE MENU -->
-    <nav id="blogMenuPanel" class="slide-menu">
-        <ul>
-            <li><a href="/">🏠 Home</a></li>
-            <li><a href="/contact/">📩 Contact</a></li>
-            <li><a href="/privacy-policy/">🔒 Privacy Policy</a></li>
-            <li><a href="/terms-and-conditions/">📋 Terms & Conditions</a></li>
-        </ul>
-    </nav>
-
-    <script>
-    (function(){
-        var host = window.location.hostname.split(".");
-        var sub = host[0];
-        if (sub.toLowerCase() === "www") sub = host[1] || "";
-        var clean = sub.replace(/-/g, " ");
-        document.getElementById("blogMainTitle").textContent = clean.replace(/\b\w/g, function(c) { return c.toUpperCase(); });
-    })();
-    (function(){
-        var btn = document.getElementById("blogMenuToggle");
-        var panel = document.getElementById("blogMenuPanel");
-        var menuIcon = btn.querySelector("svg:first-child");
-        var closeIcon = btn.querySelector("svg:last-child");
-        btn.addEventListener("click", function(e){
-            e.stopPropagation();
-            var open = panel.classList.toggle("open");
-            menuIcon.style.display = open ? "none" : "block";
-            closeIcon.style.display = open ? "block" : "none";
-        });
-        document.addEventListener("click", function(e){
-            if(!panel.contains(e.target) && !btn.contains(e.target)){
-                panel.classList.remove("open");
-                menuIcon.style.display = "block";
-                closeIcon.style.display = "none";
-            }
-        });
-        panel.addEventListener("click", function(e){
-            e.stopPropagation();
-        });
-    })();
-    </script>
-
-    <!-- ==================== BANNER 06: TOP ==================== -->
-    <div class="ad-break">
-        <div class="ad-box ad-desktop">
-            {% include /ads/banner/06.html %}
-        </div>
-        <div class="ad-box ad-mobile">
-            {% include /ads/banner/04.html %}
-        </div>
-    </div>
-
-    <!-- DESKTOP NAV -->
-    <nav class="desktop-nav">
-        <a href="/">Home</a>
-        <a href="/contact/">Contact</a>
-        <a href="/privacy-policy/">Privacy Policy</a>
-        <a href="/terms-and-conditions/">Terms & Conditions</a>
-    </nav>
-
-    <!-- MAIN LAYOUT -->
-    <div class="main-layout">
-
-        <!-- LEFT SIDEBAR: Banner 05 -->
-        <aside class="sidebar sidebar-left">
-            <div class="sticky-ad">
-                {% include /ads/banner/05.html %}
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 6h16v12H4V6zm1 1v10h14V7H5zm11 5l-6 3.5v-7L16 12z"/>
+                    </svg>
+                </div>
+                <h1>Brand<span>TrailPulse</span></h1>
+                <p>Exclusive Collection</p>
+            </div>
+            
+            <div class="sidebar-section-title">Explore Tags</div>
+            <div class="sidebar-tags-wrapper">
+                <div class="sidebar-tags" id="sidebarTagCloud"></div>
             </div>
         </aside>
-
-        <!-- MAIN CONTENT -->
-        <main class="content-area">
-
-            <!-- ========== FEATURED ========== -->
-            {% assign featured_posts = site.posts | slice: 0, 5 %}
-            {% if featured_posts.size >= 5 %}
-            <section class="gv2-section">
-                <div class="gv2-title gv2-featured-title">
-                    <h2>🔥 Featured</h2>
-                </div>
-                <div class="gv2-grid gv2-featured">
-                    {% for post in featured_posts %}
-                    <article class="gv2-card {% if forloop.first %}gv2-featured-big{% else %}gv2-featured-small{% endif %}">
-                        <a href="{{ post.url }}" class="gv2-card-link">
-                            {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
-                            {% endif %}
-                        </a>
-                        <div class="gv2-card-body">
-                            <a href="{{ post.url }}" class="gv2-card-title-link">{{ post.title }}</a>
-                            <div class="gv2-card-desc">
-                                {% assign before_svg = post.content | split: '<p>' | first %}
-                                {{ before_svg }}
-                            </div>
-                        </div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </section>
-            {% endif %}
-
-            <!-- ========== BANNER 01: SETELAH FEATURED ========== -->
-            <div class="ad-inline">
-                <div class="ad-box ad-desktop">
-                    {% include /ads/banner/01.html %}
-                </div>
-                <div class="ad-box ad-mobile">
-                    {% include /ads/banner/04.html %}
+        
+        <main class="main-content">
+            <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+            
+            <!-- ===== BANNER 1 - TOP ===== -->
+            <!-- Desktop -->
+            <div class="ad-container ad-top ad-desktop">
+                <div class="ad-content">
+                    {% include /ads/banner/07.html %}
                 </div>
             </div>
-
-            <!-- ========== LATEST ========== -->
-            {% assign latest_posts = site.posts | slice: 5, 5 %}
-            {% if latest_posts.size > 0 %}
-            <section class="gv2-section">
-                <div class="gv2-title"><h2>🆕 Latest</h2></div>
-                <div class="gv2-grid gv2-latest">
-                    {% for post in latest_posts %}
-                    <article class="gv2-card">
-                        <a href="{{ post.url }}" class="gv2-card-link">
-                            {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
-                            {% endif %}
-                        </a>
-                        <div class="gv2-card-body">
-                            <a href="{{ post.url }}" class="gv2-card-title-link">{{ post.title }}</a>
-                            <div class="gv2-card-desc">
-                                {% assign before_svg = post.content | split: '<p>' | first %}
-                                {{ before_svg }}
-                            </div>
-                        </div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </section>
-            {% endif %}
-
-            <!-- ========== BANNER 02: SETELAH LATEST ========== -->
-            <div class="ad-inline">
-                <div class="ad-box ad-both">
+            <!-- Mobile -->
+            <div class="ad-container ad-top ad-mobile">
+                <div class="ad-content">
                     {% include /ads/banner/02.html %}
                 </div>
             </div>
-
-            <!-- ========== STORIES ========== -->
-            {% assign stories_posts = site.posts | slice: 10, 4 %}
-            {% if stories_posts.size > 0 %}
-            <section class="gv2-section">
-                <div class="gv2-title"><h2>📖 Stories</h2></div>
-                <div class="gv2-grid gv2-stories">
-                    {% for post in stories_posts %}
-                    <article class="gv2-card">
-                        <a href="{{ post.url }}" class="gv2-card-link">
-                            {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
-                            {% endif %}
-                        </a>
-                        <div class="gv2-card-body">
-                            <a href="{{ post.url }}" class="gv2-card-title-link">{{ post.title }}</a>
-                            <div class="gv2-card-desc">
-                                {% assign before_svg = post.content | split: '<p>' | first %}
-                                {{ before_svg }}
-                            </div>
-                        </div>
-                    </article>
-                    {% endfor %}
+            
+            <div class="video-grid" id="videoGrid"></div>
+            
+            <!-- ===== BANNER 2 - MIDDLE ===== -->
+            <!-- Desktop -->
+            <div class="ad-container ad-middle ad-desktop">
+                <div class="ad-content">
+                    {% include /ads/banner/07.html %}
                 </div>
-            </section>
-            {% endif %}
-
-        </main>
-
-        <!-- RIGHT SIDEBAR: Banner 05 -->
-        <aside class="sidebar sidebar-right">
-            <div class="sticky-ad">
-                {% include /ads/banner/05.html %}
             </div>
-        </aside>
-
+            <!-- Mobile -->
+            <div class="ad-container ad-middle ad-mobile">
+                <div class="ad-content">
+                    {% include /ads/banner/02.html %}
+                </div>
+            </div>
+            
+            <div class="main-pagination" id="mainPagination"></div>
+            <div class="main-indicator" id="mainIndicator"></div>
+            
+            <!-- ===== BANNER 3 - BOTTOM ===== -->
+            <!-- Desktop -->
+            <div class="ad-container ad-bottom ad-desktop">
+                <div class="ad-content">
+                    {% include /ads/banner/07.html %}
+                </div>
+            </div>
+            <!-- Mobile -->
+            <div class="ad-container ad-bottom ad-mobile">
+                <div class="ad-content">
+                    {% include /ads/banner/02.html %}
+                </div>
+            </div>
+            
+            <div class="mobile-tags-section" id="mobileTagsSection">
+                <div class="mobile-tags-header" id="mobileTagsHeader">
+                    <div class="mobile-tags-title">Explore Tags</div>
+                    <button class="mobile-tags-toggle" id="mobileTagsToggle">Show All</button>
+                </div>
+                <div class="mobile-tags-wrapper" id="mobileTagsWrapper">
+                    <div class="mobile-tags" id="mobileTagCloud"></div>
+                </div>
+            </div>
+        </main>
     </div>
-
-    <!-- ==================== BANNER 07: BOTTOM ==================== -->
-    <div class="ad-break">
-        <div class="ad-box ad-desktop">
-            {% include /ads/banner/07.html %}
-        </div>
-        <div class="ad-box ad-mobile">
-            {% include /ads/banner/04.html %}
-        </div>
-    </div>
-
-    <!-- AVATAR SCRIPT -->
+    
     <script>
-    (function() {
-        var hostname = window.location.hostname;
-        var parts = hostname.split(".");
-        var fullName = parts[0];
-        if (fullName.toLowerCase() === "www") fullName = parts[1] || fullName;
-        function h(s) {var h=0;for(var i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return Math.abs(h);}
-        var dh = h(fullName);
-        var clean = fullName.replace(/-/g," ");
-        var w = clean.split(" "), init = "";
-        for (var i=0;i<Math.min(w.length,3);i++){if(w[i].length>0)init+=w[i].charAt(0).toUpperCase();}
-        if(init.length<2)init=fullName.substring(0,3).toUpperCase();
-        document.getElementById("domainAvatar").innerHTML = "<svg width=\"34\" height=\"34\" viewBox=\"0 0 34 34\"><rect width=\"34\" height=\"34\" rx=\"17\" fill=\"hsl("+(dh%360)+",60%,50%)\"/><text x=\"17\" y=\"23\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\">"+init+"</text></svg>";
-    })();
+        var siteName = 'BrandTrailPulse';
+        var baseTitle = siteName + ' - Video Gallery';
+        
+        var videoQueries = [
+           'louska leakimedia',
+'bridgetwilliamsskate reddit',
+'mark cuevas camwhore',
+'kaeleereneofficial nu',
+'ladywaifuu siterip',
+'emmabensonxo siterip',
+'karen gaytan onlyfans tits',
+'sailee dahate porn leak',
+'yusidubbsbackup camwhore',
+'emmabensonxo camwhore',
+'jazdaymedia siterip',
+'layndarex camwhores',
+'subiechickk28 leaked',
+'jossiejasmineochoa camwhore',
+'rafael motloch lpsg',
+'cynthiagohjx leak',
+'ja nesnewshoelibrary nude',
+'subiechickk28',
+'drgsnddrnk siterip',
+'aarohilu siterip',
+'seraphina botero camwhores',
+'sailee dahatee porn',
+'natalia luccas erothots',
+'sarahbustani69 vk',
+'evawxsh coomer',
+'katelyn campisis fapello',
+'erothots jennkindaexists',
+'margaryta movchan poringa',
+'sailee dahate nude leaks',
+'arssenya imiginn',
+'thejaimeleeshow nsfw',
+'turtlegirlfit camwhore',
+'supcolleen camwhores',
+'sarahbustani69 camwhores',
+'blondie rhi siterip',
+'subiechickk28 leak',
+'subiechickk28 leaks',
+'pippey10 nude',
+'slpybby erome',
+'tvoya van слив',
+'julietta rapisarda leak',
+'maryelee24 siterip',
+'just existingbro siterip',
+'kaycie lee camwhore',
+'amyfabooboo siterip',
+'aarohilu camwhore',
+'grace matias camwhore',
+'ktlordahll siterip',
+'emmabensonxo anal',
+'tahlia hall siterip',
+'intext  quot subiechickk28 quot ',
+'leti sweeetz erome',
+'subiechickk28 leaked',
+'nyukix sexyforums',
+'sexyforums stefoulis',
+'sailee dahate nude pic',
+'sailee dahate leaked sex videos',
+'ender almarza nude',
+'sailee dahate nude onlyfans',
+'sophieeioana',
+'realprettyangel siterip',
+'mellllun',
+'alyssa marie pena siterip',
+'kristina levina camwhore',
+'bridgetwilliamsskate sex',
+'earthiangel camwhore',
+'yusidubbsbackup siterip',
+"	kristi eide arsch	",
+
+"	kristina levina arsch	",
+
+"	brooketinibaby urlebird	",
+
+"	lovxena nude	",
+
+"	elwik93	",
+
+"	dora panteli wikifeet	",
+
+"	maybelandria erome	",
+
+"	s8nsqueen onlyfans leaks	",
+
+"	maybelandria desnuda	",
+
+"	sa5mshapiro	",
+
+"	monikavukic7	",
+
+"	jonathan rendon xnxx	",
+
+"	oldladyteeps threads	",
+
+"	s8nsqueen official	",
+
+"	tricia marchese nu	",
+
+"	lizzy wildfong arsch	",
+
+"	otracyo8 fapello	",
+
+"	sandravonnazaret nude	",
+
+"	melanycrc nude	",
+
+"	sharonhech erome	",
+
+"	sharonhechh erome	",
+
+"	ninawoolleyx erome	",
+
+"	poutygirl2 0 forum	",
+
+"	fran cuellar lpsg	",
+
+"	esperanzag122 onlyfans	",
+
+"	michela maria vittoria santoboni fapello	",
+
+"	otracy08 nude	",
+
+"	astrid paola tips imginn	",
+
+"	isa brunelli wikifeet	",
+
+"	mami chula pinayflix	",
+
+"	kylinmilanofficial nippel	",
+
+"	otracyo8 onlyfans	",
+
+"	linsey helms onlyfans	",
+
+"	b r i l l i a n t leak	",
+
+"	soniaasol25	",
+
+"	emilie hoffmann sextape	",
+
+"	mickymacflava	",
+
+"	abhimanika	",
+
+"	  angelpolikarpova   fansly leak	",
+
+"	lorrane gabriela nua	",
+
+"	tana mongeau nippel	",
+
+"	   rosiethabadddie 	",
+
+"	fitbunbabe nippel	",
+
+"	naddy1991 nackt	",
+
+"	cum forum nerudek	",
+
+"	karenromerord erome	",
+
+"	parisxtattoo onlyfans	",
+
+"	kimvuongg anonib	",
+
+"	s8nsqueen official leak	",
+
+"	sandra prikker socialmediagirls	",
+
+"	waiyi chan fapello	",
+
+"	mscarmenluu erome	",
+
+"	ashley houchens vsco	",
+
+"	masinka bianka erome	",
+
+"	noruledtae leaked	",
+
+"	bertevello socialmediagirls	",
+
+"	ttuulinatalja nude leak	",
+
+"	aria bedmar wikifeet	",
+
+"	tisshko pixwox	",
+
+"	elorouthe leak	",
+
+"	noemi123130 tetas	",
+
+"	senada greca wikifeet	",
+
+"	xcvbnwq	",
+
+"	416babyk	",
+
+"	adriana delgado of	",
+
+"	lorianathevally	",
+
+"	marikoswonderland	",
+
+"	oldladyteeps forum	",
+
+"	lovres min likey	",
+
+"	flirtyfitblonde mamas	",
+
+"	emm lou21	",
+
+"	seon h e 라이키	",
+
+"	cassgraffious	",
+
+"	jessy at mm	",
+
+"	ilovegraciexo leaks	",
+
+"	kristi eide nippel	",
+
+"	   jamiejmodel   leak	",
+
+"	   jamiejmodel   leaks	",
+
+"	   cup o kiki 	",
+
+"	   jamiejmodel   leaked	",
+
+"	   jamiejmodel   download	",
+
+"	   jamiejmodel   cam	",
+
+"	bigeyeslea bogel	",
+
+"	lizzy wildfong nippel	",
+
+"	deanapourian onlyfans	",
+
+"	danical121 nude	",
+
+"	jenadamaya vk	",
+
+"	erome shena natasya	",
+
+"	sheisdumi nude	",
+
+"	luciafitvibes nud	",
+
+"	miroslaavskayanessi	",
+
+"	leila berisha socialmediagirls	",
+
+"	leolulu wikifeet	",
+
+"	s8nsqueen official xxx	",
+
+"	lolyomie nua	",
+
+"	ladycherrycookie pixwox	",
+
+"	bdelicacybustring nude	",
+
+"	janaegirard vsco	",
+
+"	social media girl forum monicest	",
+
+"	claudiacapertoni@gmail com	",
+
+"	deanapourian leaked	",
+
+"	emaleahchristou nude	",
+
+"	karenpatinom nude	",
+
+"	queenofbeauty009 nude	",
+
+"	deanapourian leak	",
+
+"	minamiya6969 vk	",
+
+"	oliviaburns12 xxx	",
+
+"	pixwox tisshko	",
+
+"	sashayydoll erome	",
+
+"	yanna moya martinez onlyfans	",
+
+"	aiinoagarciia xnxx	",
+
+"	nasijia sliv	",
+
+"	raihellenalbuquerque	",
+
+"	gudangometv blogspot com	",
+
+"	lysialee vsco	",
+
+"	mirka vasiljevic wikifeet	",
+
+"	oana tascau erome	",
+
+"	s8nsqueen leaked	",
+
+"	isa buscemi with angie varona and maria arzola porn	",
+
+"	cansu cakal playboy nude	",
+
+"	dalila stabile phica	",
+
+"	chen1chen816 vk	",
+
+"	natalia garibotto nippel	",
+
+"	sashayydoll	",
+
+"	olivianowakkkk	",
+
+"	michela maria vittoria santoboni nude	",
+
+"	penelopejx porno	",
+
+"	angelloweee vk	",
+
+"	angeconnie reddit	",
+
+"	bloondi21 nudes	",
+
+"	xcvbnwq leak	",
+
+"	mina hellmeier nackt	",
+
+"	mileeee 91	",
+
+"	psycnical tülin ifşa	",
+
+"	sandra hachula telegram	",
+
+"	taqdees xx	",
+
+"	aiinoagarciia porno	",
+
+"	foxartavenue	",
+
+"	qu33nth3 reddit	",
+
+"	kming e	",
+
+"	kate shumskaya порно	",
+
+"	atavratmiyav twerk reddit	",
+
+"	belladdiaz	",
+
+"	olizcinar	",
+
+"	dirungzi 디시	",
+
+"	mina hellmeier leak	",
+
+"	nancy hernandez imginn	",
+
+"	1floridawildchild	",
+
+"	manujimeneez	",
+
+"	emily hollis fansly leaked	",
+
+"	andrea celeste treviño desnuda	",
+
+"	daluna kraemer xxx	",
+
+"	latenaristreto leaked models	",
+
+"	gayenurdmr ifşa	",
+
+"	sheswitme anal	",
+
+"	mr fapello instagram	",
+
+"	pikdame69	",
+
+"	francesca morgese nackt	",
+
+"	sambina x3	",
+
+"	tinydancer6811	",
+
+"	renu chandra imginn	",
+
+"	katarinamrc	",
+
+"	lexy mell nua	",
+
+"	emaleahchristou	",
+
+"	spalselolka channel	",
+
+"	elme muller leaked	",
+
+"	  angelpolikarpova   free pack	",
+
+"	ilada kat onlyfans	",
+
+"	sofi poffan xxx	",
+
+"	luis lambis wikipedia	",
+
+"	kelly cantelou	",
+
+"	kvttelyn	",
+
+"	sebinebogaards onlyfans	",
+
+"	helycenyko	",
+
+"	mishnya	",
+"	nikita stasia fapello	",
+
+"	ariaartizte reddit	",
+
+"	giulia zollino phica	",
+
+"	llambeneit porn	",
+
+"	tatiana quintero onlyfand	",
+
+"	noruledtae nudes	",
+
+"	schnutella89 nude	",
+
+"	shayaprincess erome	",
+
+"	alejaa chavez15 telegram	",
+
+"	alviik pixwox	",
+
+"	andreinasecret nude	",
+
+"	harleyraiyn sextape	",
+
+"	vlada vasilevskaya leaked	",
+
+"	audrey adames fapello	",
+
+"	deanapourian leaks	",
+
+"	deanapourian porn	",
+
+"	izemmaniaa ifsa	",
+
+"	kaitlyn krems cum tribute erome	",
+
+"	lanayourfantasy naked	",
+
+"	briana lozano onlyfand	",
+
+"	deanapourian erome	",
+
+"	evy rosas onlyfand	"
+        ];
+        
+        function formatTitle(query) {
+            var title = query.replace(/_/g, ' ');
+            title = title.replace(/\./g, ' ');
+            title = title.replace(/\s+/g, ' ').trim();
+            title = title.replace(/\b\w/g, function(char) {
+                return char.toUpperCase();
+            });
+            return title;
+        }
+        
+        function getDuration(index) {
+            var totalSeconds = 300 + (index * 137) % 1800;
+            var minutes = Math.floor(totalSeconds / 60);
+            var seconds = totalSeconds % 60;
+            return minutes + ':' + String(seconds).padStart(2, '0');
+        }
+        
+        var gradients = [
+            'linear-gradient(135deg, #1a0a0a, #2d0a0a)',
+            'linear-gradient(135deg, #0a0a1a, #0a0a2d)',
+            'linear-gradient(135deg, #1a0a0a, #2d0a15)',
+            'linear-gradient(135deg, #0a1a0a, #0a2d0a)',
+            'linear-gradient(135deg, #1a0a0a, #2d0a0a)',
+            'linear-gradient(135deg, #0a0a1a, #0a0a2d)',
+            'linear-gradient(135deg, #1a0a0a, #2d0a15)',
+            'linear-gradient(135deg, #0a1a0a, #0a2d0a)'
+        ];
+        
+        var itemsPerPage = 30;
+        var totalPages = Math.ceil(videoQueries.length / itemsPerPage);
+        
+        function getURLParams() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var page = parseInt(urlParams.get('page')) || 1;
+            var tag = urlParams.get('tag') || null;
+            if (page < 1) page = 1;
+            if (page > totalPages) page = totalPages;
+            return { page: page, tag: tag };
+        }
+        
+        var urlState = getURLParams();
+        var currentPage = urlState.page;
+        var activeTag = urlState.tag;
+        
+        function getPageQueries(page) {
+            var start = (page - 1) * itemsPerPage;
+            var end = Math.min(start + itemsPerPage, videoQueries.length);
+            return videoQueries.slice(start, end);
+        }
+        
+        function updateCanonicalTag() {
+            document.getElementById('canonicalTag').href = window.location.href;
+        }
+        
+        function updateStructuredData(page, tag) {
+            var baseURL = window.location.origin + window.location.pathname;
+            var pageQueries = getPageQueries(page);
+            var breadcrumbItems = [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": baseURL },
+                { "@type": "ListItem", "position": 2, "name": "Video Gallery", "item": baseURL + '?page=1' }
+            ];
+            var position = 3;
+            pageQueries.forEach(function(query) {
+                breadcrumbItems.push({
+                    "@type": "ListItem",
+                    "position": position,
+                    "name": query,
+                    "item": baseURL + '?page=' + page + '&tag=' + encodeURIComponent(query)
+                });
+                position++;
+            });
+            if (page > 1) {
+                breadcrumbItems.push({
+                    "@type": "ListItem",
+                    "position": position,
+                    "name": "Page " + page,
+                    "item": baseURL + '?page=' + page
+                });
+            }
+            document.getElementById('breadcrumbSchema').textContent = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": breadcrumbItems
+            });
+        }
+        
+        function updateHeadTags(page, tag) {
+            var pageText = page > 1 ? ' - Page ' + page : '';
+            if (tag) {
+                document.title = formatTitle(tag) + pageText + ' - ' + baseTitle;
+            } else if (page > 1) {
+                document.title = baseTitle + pageText;
+            } else {
+                document.title = baseTitle;
+            }
+            var pageQueries = getPageQueries(page);
+            var descriptions = pageQueries.map(function(q) { return formatTitle(q); });
+            var metaDescription;
+            if (tag) {
+                metaDescription = 'Page ' + page + ' - Watch videos tagged with ' + tag + '. ' + descriptions.join(', ') + '. ' + siteName + ' exclusive collection.';
+            } else {
+                metaDescription = 'Page ' + page + ' - Watch: ' + descriptions.join(', ') + '. ' + siteName + ' exclusive collection.';
+            }
+            if (metaDescription.length > 999) {
+                metaDescription = metaDescription.substring(0, 152) + '...';
+            }
+            document.getElementById('metaDescription').content = metaDescription;
+            updateCanonicalTag();
+            updateStructuredData(page, tag);
+        }
+        
+        function updateURL(page, tag) {
+            var url = new URL(window.location);
+            if (page > 1) url.searchParams.set('page', page);
+            else url.searchParams.delete('page');
+            if (tag) url.searchParams.set('tag', tag);
+            else url.searchParams.delete('tag');
+            window.history.pushState({}, '', url);
+            updateHeadTags(page, tag);
+        }
+        
+        function renderBreadcrumb(page, tag) {
+            var breadcrumb = document.getElementById('breadcrumb');
+            breadcrumb.innerHTML = '';
+            var pageQueries = getPageQueries(page);
+            
+            var home = document.createElement('span');
+            home.className = 'breadcrumb-item';
+            var homeLink = document.createElement('a');
+            homeLink.href = '/';
+            homeLink.className = 'breadcrumb-link';
+            homeLink.innerHTML = '<svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>';
+            homeLink.addEventListener('click', function(e) { e.preventDefault(); window.location.href = '/'; });
+            home.appendChild(homeLink);
+            breadcrumb.appendChild(home);
+            
+            var s1 = document.createElement('span');
+            s1.className = 'breadcrumb-separator';
+            s1.textContent = '›';
+            breadcrumb.appendChild(s1);
+            
+            var gal = document.createElement('span');
+            gal.className = 'breadcrumb-item';
+            var galLink = document.createElement('a');
+            galLink.href = '?page=1';
+            galLink.className = 'breadcrumb-link';
+            galLink.textContent = 'Gallery';
+            galLink.addEventListener('click', function(e) { e.preventDefault(); navigateTo(1, null); });
+            gal.appendChild(galLink);
+            breadcrumb.appendChild(gal);
+            
+            pageQueries.forEach(function(query) {
+                var s = document.createElement('span');
+                s.className = 'breadcrumb-separator';
+                s.textContent = '›';
+                breadcrumb.appendChild(s);
+                
+                var t = document.createElement('a');
+                t.href = '?page=' + page + '&tag=' + encodeURIComponent(query);
+                t.className = 'breadcrumb-tag';
+                t.textContent = query;
+                if (query === tag) t.classList.add('active-tag');
+                t.addEventListener('click', function(e) { e.preventDefault(); goToVideoFromTag(query); });
+                breadcrumb.appendChild(t);
+            });
+            
+            if (page > 1) {
+                var s2 = document.createElement('span');
+                s2.className = 'breadcrumb-separator';
+                s2.textContent = '›';
+                breadcrumb.appendChild(s2);
+                var p = document.createElement('span');
+                p.className = 'breadcrumb-item';
+                var ps = document.createElement('span');
+                ps.className = 'breadcrumb-current';
+                ps.textContent = 'Page ' + page;
+                p.appendChild(ps);
+                breadcrumb.appendChild(p);
+            }
+        }
+        
+        function goToVideoFromTag(query) {
+            var index = videoQueries.indexOf(query);
+            if (index === -1) return;
+            var targetPage = Math.floor(index / itemsPerPage) + 1;
+            if (targetPage !== currentPage) {
+                navigateTo(targetPage, query);
+                setTimeout(function() { scrollToVideo(index); }, 300);
+            } else {
+                navigateTo(targetPage, query);
+                scrollToVideo(index);
+            }
+        }
+        
+        function scrollToVideo(index) {
+            var grid = document.getElementById('videoGrid');
+            var items = grid.querySelectorAll('.grid-item');
+            var itemIndex = index % itemsPerPage;
+            if (items[itemIndex]) {
+                items[itemIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                items[itemIndex].classList.add('highlight');
+                setTimeout(function() { items[itemIndex].classList.remove('highlight'); }, 1500);
+            }
+        }
+        
+        function renderSidebarTags() {
+            var container = document.getElementById('sidebarTagCloud');
+            container.innerHTML = '';
+            videoQueries.forEach(function(query, index) {
+                var pageForTag = Math.floor(index / itemsPerPage) + 1;
+                var tag = document.createElement('a');
+                tag.href = '?page=' + pageForTag + '&tag=' + encodeURIComponent(query);
+                tag.className = 'sidebar-tag';
+                tag.textContent = query;
+                if (query === activeTag) tag.classList.add('active-tag');
+                tag.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    goToVideoFromTag(query);
+                });
+                container.appendChild(tag);
+            });
+        }
+        
+        function renderMobileTags() {
+            var container = document.getElementById('mobileTagCloud');
+            container.innerHTML = '';
+            videoQueries.forEach(function(query, index) {
+                var pageForTag = Math.floor(index / itemsPerPage) + 1;
+                var tag = document.createElement('a');
+                tag.href = '?page=' + pageForTag + '&tag=' + encodeURIComponent(query);
+                tag.className = 'mobile-tag';
+                tag.textContent = query;
+                if (query === activeTag) tag.classList.add('active-tag');
+                tag.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    goToVideoFromTag(query);
+                });
+                container.appendChild(tag);
+            });
+        }
+        
+        function renderMainPagination(page) {
+            var container = document.getElementById('mainPagination');
+            container.innerHTML = '';
+            
+            var prev = document.createElement('button');
+            prev.innerHTML = '<svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6 1.5 1.5L12 12l4.5 4.5z"/></svg>';
+            prev.disabled = page === 1;
+            prev.addEventListener('click', function() { navigateTo(page - 1, null); });
+            container.appendChild(prev);
+            
+            for (var i = 1; i <= totalPages; i++) {
+                (function(p) {
+                    var btn = document.createElement('button');
+                    btn.textContent = p;
+                    if (p === page) btn.classList.add('active');
+                    btn.addEventListener('click', function() { navigateTo(p, null); });
+                    container.appendChild(btn);
+                })(i);
+            }
+            
+            var next = document.createElement('button');
+            next.innerHTML = '<svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6-1.5 1.5L12 12l-4.5 4.5z"/></svg>';
+            next.disabled = page === totalPages;
+            next.addEventListener('click', function() { navigateTo(page + 1, null); });
+            container.appendChild(next);
+        }
+        
+        function renderVideos(page) {
+            var grid = document.getElementById('videoGrid');
+            grid.innerHTML = '';
+            var start = (page - 1) * itemsPerPage;
+            var end = Math.min(start + itemsPerPage, videoQueries.length);
+            
+            for (var i = start; i < end; i++) {
+                var query = videoQueries[i];
+                var title = formatTitle(query);
+                var link = '/dash2/?q=' + encodeURIComponent(query);
+                var grad = gradients[i % gradients.length];
+                var dur = getDuration(i);
+                var number = i + 1;
+                
+                var item = document.createElement('a');
+                item.href = link;
+                item.className = 'grid-item';
+                item.target = '_blank';
+                item.id = 'video-' + i;
+                item.setAttribute('aria-label', title);
+                
+                item.innerHTML = `
+                    <div class="thumbnail" style="background: ${grad}">
+                        <div class="gradient-overlay"></div>
+                        <div class="play-btn">
+                            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                        <span class="duration-badge">${dur}</span>
+                        <span class="exclusive-badge">Exclusive</span>
+                        <span class="views-badge">${Math.floor(Math.random() * 8000 + 1000)} views</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="title">${title}</div>
+                        <div class="meta-row">
+                            <span class="video-number">#${number}</span>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(item);
+            }
+            
+            document.getElementById('mainIndicator').innerHTML = 'Page <strong>' + page + '</strong> of ' + totalPages + ' (' + videoQueries.length + ' videos)';
+        }
+        
+        function navigateTo(page, tag) {
+            currentPage = page;
+            activeTag = tag;
+            updateURL(page, tag);
+            renderVideos(page);
+            renderMainPagination(page);
+            renderSidebarTags();
+            renderMobileTags();
+            renderBreadcrumb(page, tag);
+        }
+        
+        var isOpen = false;
+        document.getElementById('mobileTagsToggle').addEventListener('click', function() {
+            var wrapper = document.getElementById('mobileTagsWrapper');
+            var toggle = document.getElementById('mobileTagsToggle');
+            isOpen = !isOpen;
+            wrapper.classList.toggle('open');
+            toggle.textContent = isOpen ? 'Hide' : 'Show All';
+        });
+        
+        window.addEventListener('popstate', function() {
+            var state = getURLParams();
+            currentPage = state.page;
+            activeTag = state.tag;
+            updateHeadTags(currentPage, activeTag);
+            renderVideos(currentPage);
+            renderMainPagination(currentPage);
+            renderSidebarTags();
+            renderMobileTags();
+            renderBreadcrumb(currentPage, activeTag);
+        });
+        
+        renderVideos(currentPage);
+        renderMainPagination(currentPage);
+        renderSidebarTags();
+        renderMobileTags();
+        renderBreadcrumb(currentPage, activeTag);
+        updateHeadTags(currentPage, activeTag);
     </script>
-
-    
-    {% include /ads/gobloggugel/default.html %}
+    {% include /ads/gobloggugel/umum.html %}
     {% include footer.html %}
-
-    
 </body>
 </html>
